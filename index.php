@@ -54,13 +54,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<a href="index.php"><img src="logo4.png" alt="" /></a>
 				</div>
 				<div class="top-nav">
-					<span class="menu"><img src="images/menu.png" alt=""></span>
+					<span class="menu"><img src="Bye/images/menu.png" alt=""></span>
 					<ul class="nav1">
-						<li class="hvr-sweep-to-bottom active"><a href="index.php">Home<i><img src="images/nav-but1.png" alt=""/></i></a></li>
-						<li class="hvr-sweep-to-bottom"><a href="about.php">About<i><img src="images/nav-but2.png" alt=""/></i></a></li>
-						<li class="hvr-sweep-to-bottom"><a href="services.php">Services<i><img src="images/nav-but3.png" alt=""/></i></a></li>
-						<li class="hvr-sweep-to-bottom"><a href="product-type.php">Product<i><img src="images/nav-but4.png" alt=""/></i></a></li>
-						<li class="hvr-sweep-to-bottom"><a href="mail.php">Mail Us<i><img src="images/nav-but5.png" alt=""/></i></a></li>
+						<li class="hvr-sweep-to-bottom active"><a href="index.php">Home<i><img src="Bye/images/nav-but1.png" alt=""/></i></a></li>
+						<li class="hvr-sweep-to-bottom"><a href="about.php">About<i><img src="Bye/images/nav-but2.png" alt=""/></i></a></li>
+						<li class="hvr-sweep-to-bottom"><a href="services.php">Services<i><img src="Bye/images/nav-but3.png" alt=""/></i></a></li>
+						<li class="hvr-sweep-to-bottom"><a href="product-type.php">Product<i><img src="Bye/images/nav-but4.png" alt=""/></i></a></li>
+						<li class="hvr-sweep-to-bottom"><a href="mail.php">Mail Us<i><img src="Bye/images/nav-but5.png" alt=""/></i></a></li>
 						<div class="clearfix"> </div>
 					</ul>
 					<!-- script-for-menu -->
@@ -143,7 +143,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 				</div>
 				<div class="col-md-5 banner-bottom-right wow fadeInRight animated" data-wow-delay="0.5s" style="visibility: visible; -webkit-animation-delay: 0.5s;">
-					<img src="images/index4.png" alt=""/>
+					<img src="Bye/images/index4.png" alt=""/>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
