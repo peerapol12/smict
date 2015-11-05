@@ -111,7 +111,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					?>
 					<div class="col-md-6 news-grid wow fadeInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
 						<a href=""><h4><?php echo $result["type_name"]; ?></h4></a>
-						<a href="IMAP.php?type_name=<?php echo $result["type_name"]; ?>&pro_type_id=<?php echo $result["pro_type_id"]; ?>"><img src="<?php echo $result["picture"]; ?>"class="img-responsive" alt="" /></a>
+						<a href="IMAP.php?type_name=<?php echo $result["type_name"]; ?>&pro_type_id=<?php echo $result["pro_type_id"]; ?>"><img src="Bye/<?php echo $result["picture"]; ?>"class="img-responsive" alt="" /></a>
 					
 					</div>
 					
