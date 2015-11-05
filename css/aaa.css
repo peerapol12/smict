@@ -1,0 +1,44 @@
+.bg{
+	 float: left;
+	 height: 350px;
+	 margin: 10px;
+	  margin-top: 2em;
+	  float: left;
+	  width: 30%;
+}
+.bg {
+	  margin-top: 1em;
+	  padding-left: 0;
+	}
+.bg a h4 {
+		font-size: 14px;
+	}
+.bg span {
+		font-size: 14px;
+	}
+.bg img{
+  background-image:url(../images/bgpro.png);
+  width: 400px;
+  height:350px;
+  margin: 1px;
+  padding: 10%;
+}
+.bg a h4{
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 .3em 0;
+}
+.bg a:hover{
+	text-decoration:none;
+}
+.bg span {
+  color: #bb1e10;
+  font-size: 14px;
+  line-height: 1.7em;
+}
+.bb{
+	margin:1px;
+	padding: 5px;
+}
+
