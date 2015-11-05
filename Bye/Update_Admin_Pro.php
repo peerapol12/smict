@@ -6,6 +6,7 @@
 <?php
 $objConnect = mysql_connect("localhost","root","") or die("Error Connect to Database");
 $objDB = mysql_select_db("login");
+mysql_query("SET NAMES UTF8");
 
 $strSQL = "UPDATE admin SET ";
 $strSQL .="Username = '".$_POST["UID"]."' ";

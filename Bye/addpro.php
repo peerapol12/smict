@@ -1,6 +1,7 @@
 <?php
 $objConnect = mysql_connect("localhost","root","") or die("Error Connect to Database");
 $objDB = mysql_select_db("test");
+mysql_query("SET NAMES UTF8");
 
 $strSQL = "SELECT * FROM product WHERE pro_id = '".$_POST["txtid"]."' ";
 $objQuery = mysql_query($strSQL);
