@@ -8,6 +8,7 @@
 <?php
 	mysql_connect("localhost","root","") or die(mysql_error());
 	mysql_select_db("test");
+	mysql_query("SET NAMES UTF8");
 	
 	$strSQL = "SELECT * FROM product WHERE pro_id = '".$_GET["proID"]."' ";
 	$objQuery = mysql_query($strSQL) or die ("Error Query [".$strSQL."]");
