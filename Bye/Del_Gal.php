@@ -2,13 +2,13 @@
 $objConnect = mysql_connect("localhost","root","") or die("Error Connect to Database");
 $objDB = mysql_select_db("test");
 
-$strSQL = "DELETE FROM act_type ";
-$strSQL .="WHERE act_id = ".$_GET["Actt"];
-
+$strSQL = " DELETE FROM activity ";
+$strSQL .=" WHERE pic_id = '".$_GET["picid"]."' ";
 $objQuery = mysql_query($strSQL);
 
 if($objQuery)
 {
+	unlink("".$_GET["delPic"]."");
 	header('location: Setting_Success.php');
 }
 else
@@ -17,4 +17,5 @@ else
 }
 
 mysql_close($objConnect);
+
 ?>
