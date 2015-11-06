@@ -16,7 +16,7 @@ else if($objResult)
 	{
 		header('location: Setting_Error.php');
 	}	
-$sub_dir="Act_test/";
+$sub_dir="Act_img/";
 $target_dir = $sub_dir;
 $Str_new_file = explode(".",$_FILES['pic']['name']);
 
