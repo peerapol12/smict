@@ -12,6 +12,7 @@
 					<li><a href="services.php">Services</a></li>
 					<li><a href="product-type.php">Product</a></li>
 					<li><a href="mail.php">Mail Us</a></li>
+					<li><a href="activity.php">กิจกรรม</a></li>
 				</ul>
 				<form>
 					<input type="text" placeholder="Email" required="">

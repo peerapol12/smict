@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>SMART ICT</title>
+<title>Smart ICT</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Truck Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
@@ -27,20 +27,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script>
 	 new WOW().init();
 </script>
-<!-- pop-up -->
-<link rel="stylesheet" href="css/touchTouch.css" type="text/css" media="all" />
-<script type="text/javascript" src="js/jquery.fancybox.js"></script>
-	   <script type="text/javascript">
-			$(document).ready(function() {
-				/*
-				 *  Simple image gallery. Uses default settings
-				 */
-
-				$('.fancybox').fancybox();
-
-			});
-		</script>
-<!-- pop-up -->
 <!--start-smoth-scrolling-->
 		<script type="text/javascript" src="js/move-top.js"></script>
 		<script type="text/javascript" src="js/easing.js"></script>
@@ -57,7 +43,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 <body>
 	<!-- banner -->
-<div id="home" class="banner a-banner">
+	<div id="home" class="banner a-banner">
 		<!-- container -->
 		<div class="container">
 			<div class="header">
@@ -65,14 +51,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<a href="index.php"><img src="logo4.png" alt="" /></a>
 				</div>
 				<div class="top-nav">
-					<span class="menu"><img src="Bye/images/menu.png" alt=""></span>
+					<span class="menu"><img src="images/menu.png" alt=""></span>
 					<ul class="nav1">
 						<li class="hvr-sweep-to-bottom"><a href="index.php">Home<i><img src="Bye/images/nav-but1.png" alt=""/></i></a></li>
 						<li class="hvr-sweep-to-bottom"><a href="about.php">About<i><img src="Bye/images/nav-but2.png" alt=""/></i></a></li>
-						<li class="hvr-sweep-to-bottom"><a href="services.php">Services<i><img src="Bye/images/nav-but3.png" alt=""/></i></a></li>
-						<li class="hvr-sweep-to-bottom active"><a href="product-type.php">Product<i><img src="Bye/images/nav-but4.png" alt=""/></i></a></li>
+						<li class="hvr-sweep-to-bottom"><a href="services.php">Services<i><img src="Bye/images/nav-but3.png" alt=""/> </i> </a></li>
+						<li class="hvr-sweep-to-bottom"><a href="product-type.php">Product<i><img src="Bye/images/nav-but4.png" alt=""/></i></a></li>
 						<li class="hvr-sweep-to-bottom"><a href="mail.php">Mail<i><img src="Bye/images/nav-but5.png" alt=""/></i></a></li>
-						<li class="hvr-sweep-to-bottom"><a href="activity.php">กิจกรรม<i><img src="Bye/images/nav-but5.png" alt=""/></i></a></li>
+						<li class="hvr-sweep-to-bottom active"><a href="activity.php">กิจกรรม<i><img src="Bye/images/nav-but5.png" alt=""/></i></a></li>
 						<div class="clearfix"> </div>
 					</ul>
 					<!-- script-for-menu -->
@@ -88,44 +74,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="clearfix"> </div>
 			</div>
 		</div>
-</div>
+		<!-- //container -->
+	</div>
 	<!-- //banner -->
-	<!-- products-top -->
-	<div class="products-top">
-		<!-- container -->
-	<div class="news">
-		<div class="container">
-			<div class="news-text">
-				<h3>สินค้าของบริษัท สมาร์ท ไอซีที จำกัด</h3>
-				
-			</div>
-				<div class="news-grids">
-					
-					<?php include 'conn.php';
-					
-					$sql = "Select * from product_type";
-					$query = mysql_query($sql);
-					
-					while ($result = mysql_fetch_array($query)) {					
-					
-					?>
-					<div class="col-md-6 news-grid wow fadeInLeft animated" data-wow-delay="0.4s" style="visibility: visible; -webkit-animation-delay: 0.4s;">
-						<a href=""><h4><?php echo $result["type_name"]; ?></h4></a>
-						<a href="IMAP.php?type_name=<?php echo $result["type_name"]; ?>&pro_type_id=<?php echo $result["pro_type_id"]; ?>"><img src="Bye/<?php echo $result["picture"]; ?>"class="img-responsive" alt="" /></a>
-					
-					</div>
-					
-					<?php }?>			
-				<div class="clearfix"> </div>
-			</div>
-		</div>
-	</div>
-	</div>
-	<!-- //products-top -->
-	<!-- products-bottom -->
-	
-	<!-- products-bottom -->
-	<!-- footer -->
-	<?php include ('footer.php')?>
+	<!--single_page -->
+
+<?php include ('footer.php')?>
 </body>
 </html>

@@ -67,7 +67,8 @@
 						<li class="hvr-sweep-to-bottom"><a href="about.php">About<i><img src="Bye/images/nav-but2.png" alt=""/></i></a></li>
 						<li class="hvr-sweep-to-bottom active"><a href="services.php">Services<i><img src="Bye/images/nav-but3.png" alt=""/></i></a></li>
 						<li class="hvr-sweep-to-bottom"><a href="product-type.php">Product<i><img src="Bye/images/nav-but4.png" alt=""/></i></a></li>
-						<li class="hvr-sweep-to-bottom"><a href="mail.php">Mail Us<i><img src="Bye/images/nav-but5.png" alt=""/></i></a></li>
+						<li class="hvr-sweep-to-bottom"><a href="mail.php">Mail<i><img src="Bye/images/nav-but5.png" alt=""/></i></a></li>
+						<li class="hvr-sweep-to-bottom"><a href="activity.php">กิจกรรม<i><img src="Bye/images/nav-but5.png" alt=""/></i></a></li>
 						<div class="clearfix"> </div>
 					</ul>
 					<!-- script-for-menu -->

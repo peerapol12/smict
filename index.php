@@ -60,7 +60,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<li class="hvr-sweep-to-bottom"><a href="about.php">About<i><img src="Bye/images/nav-but2.png" alt=""/></i></a></li>
 						<li class="hvr-sweep-to-bottom"><a href="services.php">Services<i><img src="Bye/images/nav-but3.png" alt=""/></i></a></li>
 						<li class="hvr-sweep-to-bottom"><a href="product-type.php">Product<i><img src="Bye/images/nav-but4.png" alt=""/></i></a></li>
-						<li class="hvr-sweep-to-bottom"><a href="mail.php">Mail Us<i><img src="Bye/images/nav-but5.png" alt=""/></i></a></li>
+						<li class="hvr-sweep-to-bottom"><a href="mail.php">Mail<i><img src="Bye/images/nav-but5.png" alt=""/></i></a></li>
+						<li class="hvr-sweep-to-bottom"><a href="activity.php">กิจกรรม<i><img src="Bye/images/nav-but5.png" alt=""/></i></a></li>
 						<div class="clearfix"> </div>
 					</ul>
 					<!-- script-for-menu -->
@@ -137,7 +138,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					  <h3>บริษัท สมาร์ท ไอซีที จำกัด</h3>
 						<h5>เป็นผู้ให้บริการระบบ ICT Solution ที่มีประสิทธิภาพในประเทศไทย เพื่อตอบสนองความต้องการของผู้ใช้งาน ในหลากหลายรูปแบบตามความเหมาะสมกับสภาพการใช้งานและครบวงจร จากการรวบรวมข้อมูลด้านเทคโนโลยีโทรคมนาคม และประสบการณ์กว่า 10 ปี  </h5>
 						
-						<div class="see-button">
+						<div class="see-button" align="center">
 							<a class="btn btn-primary btn-lg see-button hvr-shutter-out-horizontal" href="about.php" role="button">See More</a>
 						</div>
 					</div>

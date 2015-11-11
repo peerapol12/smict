@@ -69,7 +69,8 @@
 						<li class="hvr-sweep-to-bottom"><a href="about.php">About<i><img src="Bye/images/nav-but2.png" alt=""/></i></a></li>
 						<li class="hvr-sweep-to-bottom"><a href="services.php">Services<i><img src="Bye/images/nav-but3.png" alt=""/></i></a></li>
 						<li class="hvr-sweep-to-bottom active"><a href="product-type.php">Product<i><img src="Bye/images/nav-but4.png" alt=""/></i></a></li>
-						<li class="hvr-sweep-to-bottom"><a href="mail.php">Mail Us<i><img src="Bye/images/nav-but5.png" alt=""/></i></a></li>
+						<li class="hvr-sweep-to-bottom"><a href="mail.php">Mail<i><img src="Bye/images/nav-but5.png" alt=""/></i></a></li>
+						<li class="hvr-sweep-to-bottom"><a href="activity.php">กิจกรรม<i><img src="Bye/images/nav-but5.png" alt=""/></i></a></li>
 						<div class="clearfix"> </div>
 					</ul>
 					<!-- script-for-menu -->
@@ -110,8 +111,8 @@
   					<div class="uk-width-small-1-2 uk-width-medium-1-3 "><br>
   						
     					
-    						<div class="uk-border-rounded"style="height: 300px;overflow: hidden; border: 5px solid #D6D6D6; background-image: url(111.jpg);background-repeat: no-repeat;">
-      							<a href= "#<?php echo $resultt["pro_id"];?>"  data-uk-modal><img class="test-center" src="Bye/<?php echo $resultt["picture"];?>" style="height: 220px;width: 220px;" hspace="17%" vspace="10%" alt="..."></a>
+    						<div class="uk-border-rounded"style="height: 300px;overflow: hidden; background-image: url(333.jpg);background-repeat: no-repeat;">
+      							<a href= "#<?php echo $resultt["pro_id"];?>"  data-uk-modal><img class="test-center" src="Bye/<?php echo $resultt["picture"];?>" style="height: 220px;width: 220px;" vspace = "12%" hspace="15%"alt="..."></a>
       						</div>
       						<div id="<?php echo $resultt["pro_id"];?>" class="uk-modal">
       							<div class="uk-modal-dialog">

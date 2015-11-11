@@ -30,7 +30,7 @@ body a {
 }
 .top-nav{
   float: right;
-  width: 70%;
+  width: 65%;
 }
 .top-nav ul{
 	padding:0;
@@ -38,7 +38,7 @@ body a {
 }
 .top-nav ul  li{
   display: inline-block;
-  width: 18%;
+  width: 15%;
   margin-right: .4em;
   float: left;
 }
@@ -52,7 +52,7 @@ color: #FFF;
   float: left;
   padding: 3em 0em 3em 1.4em;
   text-align: center;
-  width: 79%;
+  width: 75%;
 }
 .top-nav ul li a i{
   display: block;
