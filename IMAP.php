@@ -110,8 +110,8 @@
   					<div class="uk-width-small-1-2 uk-width-medium-1-3 "><br>
   						
     					
-    						<div class="uk-border-rounded"style="height: 300px;overflow: hidden; border: 5px solid #D6D6D6;">
-      							<a href= "#<?php echo $resultt["pro_id"];?>"  data-uk-modal><img class="test-center" src="Bye/<?php echo $resultt["picture"];?>" style="height: 290px;width: 290px;" hspace="5%" vspace="3%" alt="..."></a>
+    						<div class="uk-border-rounded"style="height: 300px;overflow: hidden; border: 5px solid #D6D6D6; background-image: url(111.jpg);background-repeat: no-repeat;">
+      							<a href= "#<?php echo $resultt["pro_id"];?>"  data-uk-modal><img class="test-center" src="Bye/<?php echo $resultt["picture"];?>" style="height: 220px;width: 220px;" hspace="17%" vspace="10%" alt="..."></a>
       						</div>
       						<div id="<?php echo $resultt["pro_id"];?>" class="uk-modal">
       							<div class="uk-modal-dialog">
