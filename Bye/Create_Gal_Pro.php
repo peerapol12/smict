@@ -1,7 +1,7 @@
 
 <?php
 $objConnect = mysql_connect("localhost","root","") or die("Error Connect to Database");
-$objDB = mysql_select_db("smartict");
+$objDB = mysql_select_db("test");
 mysql_query("SET NAMES UTF8");
 
 $strSQL = "SELECT * FROM activity WHERE pic_id = '".$_POST["txtgal"]."' ";
@@ -16,7 +16,7 @@ else if($objResult)
 	{
 		header('location: Setting_Error.php');
 	}	
-$sub_dir="Act_test/";
+$sub_dir="Act_test/ ";
 $target_dir = $sub_dir;
 $Str_new_file = explode(".",$_FILES['pic']['name']);
 

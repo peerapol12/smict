@@ -1,6 +1,6 @@
 <?php
 	mysql_connect("localhost","root","");
-	mysql_select_db("smartict");
+	mysql_select_db("test");
 	mysql_query("SET NAMES UTF8");
 	
 	if(trim($_POST["txtAct"]) == "")

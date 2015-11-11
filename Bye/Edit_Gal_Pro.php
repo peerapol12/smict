@@ -5,7 +5,7 @@
 <body>
 <?php
 $objConnect = mysql_connect("localhost","root","") or die("Error Connect to Database");
-$objDB = mysql_select_db("smartict");
+$objDB = mysql_select_db("test");
 mysql_query("SET NAMES UTF8");
 
 $strSQL = "UPDATE activity SET ";

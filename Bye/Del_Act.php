@@ -1,6 +1,6 @@
 <?php
 $objConnect = mysql_connect("localhost","root","") or die("Error Connect to Database");
-$objDB = mysql_select_db("smartict");
+$objDB = mysql_select_db("test");
 
 $strSQL = "DELETE FROM act_type ";
 $strSQL .="WHERE act_id = ".$_GET["Actt"];
