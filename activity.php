@@ -14,6 +14,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- bootstarp-css -->
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/uikit.css" rel="stylesheet"/>
+<link href="css/fotorama.css" rel="stylesheet"/>
 <!--// bootstarp-css -->
 <!-- css -->
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
@@ -77,8 +79,47 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!-- //container -->
 	</div>
 	<!-- //banner -->
-	<!--single_page -->
-
+<div class="container">
+	<h1 align="center">กิจกรรม บริษัท</h1>
+</div>
+<div class="container">
+<div data-uk-grid class="uk-grid">
+				<?php include 'conn.php';
+				
+					$sqll = "SELECT * FROM act_type";
+					$queryy = mysql_query($sqll);
+					
+					while ($resultt = mysql_fetch_array($queryy)) {
+					$sqll2 = "select * from activity where act_id = '".$resultt["act_id"]."'";
+					$queryy2 = mysql_query($sqll2);
+																				
+				?>
+				
+  					<div class="uk-width-small-1-2 uk-width-medium-1-3 "><br>
+  						
+    					
+    						<div class="uk-border-rounded"style="height: 300px;overflow: hidden; background-image: url(333.jpg);background-repeat: no-repeat;">
+      							<a href= "#<?php echo $resultt["act_id"];?>" data-uk-modal><h4><?php echo $resultt["activity"];?></h4> </a>
+      						</div>
+      						<div id="<?php echo $resultt["act_id"];?>" class="uk-modal">
+      							<div class="uk-model-dialog">
+      								<a class="uk-modal-close uk-close"></a>
+      								<div class="fotorama" data-loop = "true">
+      									<?php while ($resultt2 = mysql_fetch_array($queryy2)){?>
+      									<img src="<?php echo $resultt2["picname"];?>">
+      									<?php }?>
+      								</div>
+    							</div>
+    						</div>
+    				</div>
+					<?php }?>
+</div>
+</div>
 <?php include ('footer.php')?>
+<script src="js/fotorama.js"></script>
+<script src="js/uikit.js"></script>
+<script src="js/components/grid.js"></script>
+<script src="js/components/lightbox.js"></script>
+<script src="js/core/modal.js"></script>
 </body>
 </html>
