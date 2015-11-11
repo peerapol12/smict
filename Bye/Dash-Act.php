@@ -63,8 +63,8 @@
  		</div>
  					
 		<div class="col-md-6">
-		<p>
-  			<a class="btn btn-link" href="Add_Act.php" role="button">+ Add New 	Activity</a>
+		<br /><p>
+  			<a class="btn btn-link" href="Add_Act.php" role="button">+ Add New Activity</a>
   			<a class="btn btn-link" href="Index.php" role="button">- Back to Index</a>
 		</p>
 		</div>
