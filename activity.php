@@ -79,7 +79,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!-- //container -->
 	</div>
 	<!-- //banner -->
-<div class="container">
+<div class="container"><br />
 	<h1 align="center">กิจกรรม บริษัท</h1>
 </div>
 <div class="container">
@@ -102,11 +102,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       							<a href= "#<?php echo $resultt["act_id"];?>" data-uk-modal><h4><?php echo $resultt["activity"];?></h4> </a>
       						</div>
       						<div id="<?php echo $resultt["act_id"];?>" class="uk-modal">
-      							<div class="uk-model-dialog">
+      							<div class="uk-modal-dialog">
       								<a class="uk-modal-close uk-close"></a>
       								<div class="fotorama" data-loop = "true">
       									<?php while ($resultt2 = mysql_fetch_array($queryy2)){?>
-      									<img src="<?php echo $resultt2["picname"];?>">
+      									<img src="Bye/<?php echo $resultt2["picname"];?>">
       									<?php }?>
       								</div>
     							</div>
