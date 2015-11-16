@@ -53,7 +53,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<a href="index.php"><img src="logo4.png" alt="" /></a>
 				</div>
 				<div class="top-nav">
-					<span class="menu"><img src="images/menu.png" alt=""></span>
+					<span class="menu"><img src="Bye/images/menu.png" alt=""></span>
 					<ul class="nav1">
 						<li class="hvr-sweep-to-bottom"><a href="index.php">Home<i><img src="Bye/images/nav-but1.png" alt=""/></i></a></li>
 						<li class="hvr-sweep-to-bottom"><a href="about.php">About<i><img src="Bye/images/nav-but2.png" alt=""/></i></a></li>
@@ -80,7 +80,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	</div>
 	<!-- //banner -->
 <div class="container"><br />
-	<h1 align="center">กิจกรรม บริษัท</h1>
+	<h1 align="center" style="color: #cc0000">กิจกรรม บริษัท</h1>
 </div>
 <div class="container">
 <div data-uk-grid class="uk-grid">
@@ -98,13 +98,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
   					<div class="uk-width-small-1-2 uk-width-medium-1-3 "><br>
   						
     					
-    						<div class="uk-border-rounded"style="height: 300px;overflow: hidden; background-image: url(333.jpg);background-repeat: no-repeat;">
-      							<a href= "#<?php echo $resultt["act_id"];?>" data-uk-modal><h4><?php echo $resultt["activity"];?></h4> </a>
+    						<div class="uk-border-rounded">
+      							<a href= "#<?php echo $resultt["act_id"];?>" data-uk-modal><h4><?php echo $resultt["activity"];?></h4><img class="img-circle" src="Bye/<?php echo $resultt["detail"];?>" style="height: 220px; width: 220px; padding: 4px; border: 2px solid black;"/> </a>
       						</div>
       						<div id="<?php echo $resultt["act_id"];?>" class="uk-modal">
       							<div class="uk-modal-dialog">
       								<a class="uk-modal-close uk-close"></a>
-      								<div class="fotorama" data-loop = "true">
+      								<div class="fotorama" data-nav = "thumbs">
+      									
       									<?php while ($resultt2 = mysql_fetch_array($queryy2)){?>
       									<img src="Bye/<?php echo $resultt2["picname"];?>">
       									<?php }?>
@@ -114,7 +115,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
     				</div>
 					<?php }?>
 </div>
-</div>
+</div><br />
 <?php include ('footer.php')?>
 <script src="js/fotorama.js"></script>
 <script src="js/uikit.js"></script>

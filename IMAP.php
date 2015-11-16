@@ -112,7 +112,7 @@
   						
     					
     						<div class="uk-border-rounded"style="height: 300px;overflow: hidden; background-image: url(333.jpg);background-repeat: no-repeat;">
-      							<a href= "#<?php echo $resultt["pro_id"];?>"  data-uk-modal><img class="test-center" src="Bye/<?php echo $resultt["picture"];?>" style="height: 220px;width: 220px;" vspace = "12%" hspace="15%"alt="..."></a>
+      							<a href= "#<?php echo $resultt["pro_id"];?>"  data-uk-modal><img src="Bye/<?php echo $resultt["picture"];?>" style="height: 220px;width: 220px;" vspace = "12%" hspace="15%"alt="..."></a>
       						</div>
       						<div id="<?php echo $resultt["pro_id"];?>" class="uk-modal">
       							<div class="uk-modal-dialog">
