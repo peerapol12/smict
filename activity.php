@@ -104,7 +104,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
       						<div id="<?php echo $resultt["act_id"];?>" class="uk-modal">
       							<div class="uk-modal-dialog">
       								<a class="uk-modal-close uk-close"></a>
-      								<div class="fotorama" data-nav = "thumbs">
+      								<div class="fotorama" data-nav = "thumbs" data-width="100%" data-allowfullscreen="true">
       									
       									<?php while ($resultt2 = mysql_fetch_array($queryy2)){?>
       									<img src="Bye/<?php echo $resultt2["picname"];?>">
