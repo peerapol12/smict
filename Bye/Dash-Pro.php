@@ -15,7 +15,7 @@
 <body>
 	<?php
 	$objConnect = mysql_connect("localhost","root","") or die("Error Connect to Database");
-	$objDB = mysql_select_db("test");
+	$objDB = mysql_select_db("smartict");
 	mysql_query("SET NAMES UTF8");
 
 	?>
