@@ -26,7 +26,7 @@
 	else{
 	?>
 <body>
-<form name="form1" method="post" action="Edit.php?proID=<?php echo $_GET["proID"];?>"><br />
+<form name="form1" method="post" action="Edit.php?proID=<?php echo $_GET["proID"];?>" enctype="multipart/form-data"><br />
   <div class="container">
 			<div class="col-md-4 col-md-offset-4"> 
 				<div class="panel panel-primary ">
@@ -35,6 +35,10 @@
     							</div>
     							
     							<br />
+    							<center><div style="width: 140px; height: 140px; overflow: hidden;">
+									<img src="<?php echo $objResult["picture"];?>" class="img-thumbnail" alt="ไม่มีรูป">
+    							</div></center><br />
+    							
     							<div class="form-group container-fluid">								
     								<label for="exampleInputID">Edit Product ID</label>
     								<input id="txtproid" name="txtproid" type="text" class="form-control" value="<?php echo $objResult["pro_id"];?>">
@@ -44,6 +48,16 @@
     								<label for="exampleInputName">Edit Name</label>
     								<input id="txtname" name="txtname" type="text" class="form-control" value="<?php echo $objResult["pro_name"];?>">
   								</div>
+  								
+  								<div class="form-group">
+  									<div class="container-fluid">
+    								<label for="exampleInputFile">Gallery Upload</label>
+    								<input type="file" name="pic" id="pic">
+    								<br />
+    									ขนาดไม่เกิน  1 MB
+    								</div>
+    							</div>
+  								
   								<div class="form-group container-fluid">								
     								<label for="exampleInputDetail">Edit Detail</label>
     								<textarea id="txtdetail" name="txtdetail" type="text" class="form-control" rows="3"><?php echo $objResult2["detail"];?></textarea>
