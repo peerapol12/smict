@@ -8,13 +8,9 @@ $objConnect = mysql_connect("localhost","root","") or die("Error Connect to Data
 $objDB = mysql_select_db("smartict");
 mysql_query("SET NAMES UTF8");
 
-$strSQL0 = "SELECT * FROM product_type where pro_type_id ='".$_POST["droptype"]."'";
-$objQuery0 = mysql_query($strSQL0);
-$result = mysql_fetch_array($objQuery0);
-
-$strSQL1 = "SELECT * FROM product_type where pro_type_id = '".$_POST["txtproid"]."'";
-$objQuery1 = mysql_query($strSQL1);
-$result = mysql_fetch_array($objQuery1);
+$strSQL = "SELECT * FROM view_product where pro_id = '".$_POST["txtproid"]."'";
+$objQuery = mysql_query($strSQL);
+$result = mysql_fetch_array($objQuery);
 
 $sub_dir="images/".$result["type_name"]."/";
 $target_dir = $sub_dir;
@@ -32,7 +28,6 @@ $strSQL = "UPDATE product SET ";
 $strSQL .="pro_id = '".$_POST["txtproid"]."' ";
 $strSQL .=",pro_name = '".$_POST["txtname"]."' ";
 $strSQL .=",picture = '".$dirtrue."' ";
-$strSQL .=",pro_type_id = '".$_POST["droptype"]."' ";
 $strSQL .="WHERE pro_id = '".$_GET["proID"]."' ";
 
 $strSQL2 = "UPDATE detail_pro SET ";
@@ -61,6 +56,7 @@ else
 }
 
 mysql_close($objConnect);
+
 ?>
 </body>
 </html>

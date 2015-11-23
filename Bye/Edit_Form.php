@@ -47,34 +47,7 @@
   								<div class="form-group container-fluid">
     								<label for="exampleInputName">Edit Name</label>
     								<input id="txtname" name="txtname" type="text" class="form-control" value="<?php echo $objResult["pro_name"];?>">
-  								</div>
-  								
-  								<div class="form-group container-fluid">
-    								<div class="row">
-  										<div class="col-md-4">
-    										<label for="exampleInput">ประเภทสินค้า</label>
-    										
-											
-    											<select name="droptype">
-													<option value="">ประเภทที่ : <?php echo $objResult["pro_type_id"];?></option>
-													
-													 <?php
-														$strSQL = "SELECT * FROM product_type";
-														$objQuery = mysql_query($strSQL);
-														
-														while($objResuut = mysql_fetch_array($objQuery))
-													{
-													?>
-													<option value="<?php echo $objResuut["pro_type_id"];?>"><?php echo $objResuut["pro_type_id"]." - ".$objResuut["type_name"];?></option>
-													<?php
-													}
-													?>
-		  										</select>
-	
-  											
-  											</div>
-  										</div>
-  									</div>
+  								</div>  					
   								
   								<div class="form-group">
   									<div class="container-fluid">
