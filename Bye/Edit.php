@@ -9,7 +9,7 @@ $objDB = mysql_select_db("smartict");
 mysql_query("SET NAMES UTF8");
 
 
-$sub_dir="product_test/";
+$sub_dir="images/";
 $target_dir = $sub_dir;
 $Str_new_file = explode(".",$_FILES['pic']['name']);
 

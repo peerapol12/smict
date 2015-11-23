@@ -3,7 +3,7 @@ $objConnect = mysql_connect("localhost","root","") or die("Error Connect to Data
 $objDB = mysql_select_db("smartict");
 mysql_query("SET NAMES UTF8");
 
-$strSQL1 = "SELECT * FROM product_type where product_type_id = '".$_POST["txtid"]."'";
+$strSQL1 = "SELECT * FROM product_type";
 $objQuery1 = mysql_query($strSQL1);
 $result = mysql_fetch_array($objQuery1);
 
