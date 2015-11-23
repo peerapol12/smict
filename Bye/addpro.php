@@ -7,7 +7,6 @@ $strSQL1 = "SELECT * FROM product_type";
 $objQuery1 = mysql_query($strSQL1);
 $result = mysql_fetch_array($objQuery1);
 
-
 $strSQL = "SELECT * FROM product WHERE pro_id = '".$_POST["txtid"]."' ";
 $objQuery = mysql_query($strSQL);
 $objResult = mysql_fetch_array($objQuery);
