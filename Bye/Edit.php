@@ -8,7 +8,8 @@ $objConnect = mysql_connect("localhost","root","") or die("Error Connect to Data
 $objDB = mysql_select_db("smartict");
 mysql_query("SET NAMES UTF8");
 
-$sub_dir="product_test/ ";
+
+$sub_dir="product_test/";
 $target_dir = $sub_dir;
 $Str_new_file = explode(".",$_FILES['pic']['name']);
 

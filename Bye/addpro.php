@@ -3,6 +3,11 @@ $objConnect = mysql_connect("localhost","root","") or die("Error Connect to Data
 $objDB = mysql_select_db("smartict");
 mysql_query("SET NAMES UTF8");
 
+$strSQL1 = "SELECT * FROM product_type where product_type_id = '".$_POST["txtid"]."'";
+$objQuery1 = mysql_query($strSQL1);
+$result = mysql_fetch_array($objQuery1);
+
+
 $strSQL = "SELECT * FROM product WHERE pro_id = '".$_POST["txtid"]."' ";
 $objQuery = mysql_query($strSQL);
 $objResult = mysql_fetch_array($objQuery);
@@ -26,7 +31,8 @@ else if(trim($_POST["droptype"]) == "")
 		exit();
 }	
 
-$sub_dir="product_test/";
+$sub_dir="images/".$result["type_name"]."/";
+
 $target_dir = $sub_dir;
 $Str_new_file = explode(".",$_FILES['pic']['name']);
 
