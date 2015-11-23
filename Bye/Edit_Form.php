@@ -17,7 +17,7 @@
 	$strSQL2 = "SELECT * FROM detail_pro WHERE pro_id = '".$_GET["proID"]."' ";
 	$objQuery2 = mysql_query($strSQL2) or die ("Error Query [".$strSQL2."]");
 	$objResult2 = mysql_fetch_array($objQuery2);
-	
+
 	if(!$objResult){
 		echo "Not found pro_id=".$_GET["proID"];
 		echo "<a href=\"Index.php\" class=\"btn btn-info\"><<กลับ</a>";
@@ -48,6 +48,33 @@
     								<label for="exampleInputName">Edit Name</label>
     								<input id="txtname" name="txtname" type="text" class="form-control" value="<?php echo $objResult["pro_name"];?>">
   								</div>
+  								
+  								<div class="form-group container-fluid">
+    								<div class="row">
+  										<div class="col-md-4">
+    										<label for="exampleInput">ประเภทสินค้า</label>
+    										
+											
+    											<select name="droptype">
+													<option value="">ประเภทที่ : <?php echo $objResult["pro_type_id"];?></option>
+													
+													 <?php
+														$strSQL = "SELECT * FROM product_type";
+														$objQuery = mysql_query($strSQL);
+														
+														while($objResuut = mysql_fetch_array($objQuery))
+													{
+													?>
+													<option value="<?php echo $objResuut["pro_type_id"];?>"><?php echo $objResuut["pro_type_id"]." - ".$objResuut["type_name"];?></option>
+													<?php
+													}
+													?>
+		  										</select>
+	
+  											
+  											</div>
+  										</div>
+  									</div>
   								
   								<div class="form-group">
   									<div class="container-fluid">
